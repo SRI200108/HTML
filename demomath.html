@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button  type="button" onclick="s()">generate otp</button><br><br>
+    <input type="'text" id="r"><br><br>
+    <button  type="button" onclick="p()">submit</button>
+    <!-- <button onclick="redir()">redirect</button> -->
+     <h1 id="e"></h1>
+    <script>
+
+        var rs;
+        function s(){
+rs=Math.floor(Math.random()*10000)
+alert("your otp is"+rs);
+
+        }
+        
+        function p(){
+            var b=document.getElementById("r").value
+        if(rs==b){
+            document.getElementById("e").innerHTML="verified"
+            document.getElementById("e").style.color="green"
+
+             window.location.assign("functionsjs.html")
+
+        }
+        else{
+            document.getElementById("e").innerHTML="failed"
+            document.getElementById("e").style.color="red"
+        }
+        }
+      
+    // console.log(window.location.href);
+    // console.log(window.location.hostname);
+    // console.log(window.location.pathname);
+    // console.log(window.location.port);
+
+    // function redir(){
+    //     // window.location.replace("flex.html")
+
+    //     // window.location.assign("flex.html")
+    // }
+
+    // localStorage.setItem("name","sabesh")
+    // var uu=localStorage.getItem("name")
+    // console.log(uu);
+    
+    // localStorage.clear()
+    
+
+    </script>
+</body>
+</html>
