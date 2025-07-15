@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="s">
+    <select  id="c" onchange="color()">
+
+<option value="red">RED</option>
+<option value="green">GREEN</option>
+<OPtion value="yellow">YELLOW</OPtion>
+
+    </select>
+
+    <script>
+
+function color(){
+
+var sri=document.getElementById("c").value
+document.getElementById("s").style.backgroundColor=sri
+}
+
+    </script>
+</body>
+</html>
