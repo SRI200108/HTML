@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1 id="heading"></h1>
+<input type="text" id="username">
+<input type="text" id="password">
+<button onclick="ss()">submit</button> 
+<body>
+    <script>
+
+
+    
+
+    var sd;
+function ss(){
+
+var username="sridhar"
+var password="sridhar123"
+var e=document.getElementById("username").value;
+var d=document.getElementById("password").value;
+localStorage.setItem("name",username)
+
+if (username==e & password==d){
+document.getElementById("heading").innerHTML="verified successfully"
+document.getElementById("username").style.borderColor='green'
+document.getElementById("password").style.borderColor='green'
+window.location.assign("New.html")
+}
+
+ else if(username!=e) {
+    document.getElementById("heading").innerHTML="incorrect username"
+     document.getElementById("username").style.borderColor='red'
+     document.getElementById("password").style.borderColor='green'
+ }
+
+ else if(password!=d) {
+    document.getElementById("heading").innerHTML="incorrect password"
+    document.getElementById("password").style.borderColor='red'
+    document.getElementById("username").style.borderColor='green'
+
+}
+ else {
+     document.getElementById("heading").innerHTML="incorrect"
+     document.getElementById("username").style.borderColor='red'
+document.getElementById("password").style.borderColor='red'
+
+ }   
+
+}
+
+
+    </script>
+</body>
+</html>
