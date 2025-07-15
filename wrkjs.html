@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        #B{
+            background-color: blue;
+         } 
+         #R{
+            background-color: red;
+         }
+         #G{
+            background-color: green;
+         }
+         #Y{
+            background-color: yellow;
+         }
+    </style> -->
+</head>
+<body id="r">
+
+<select  id="color" onchange="color()">
+    <option value="red">red</option>
+    <option value="green">green</option>
+    <option value="blue">blue</option>
+</select>
+
+
+    <script>
+        function color(){
+
+var a=document.getElementById("color").value
+document.getElementById('r').style.backgroundColor=a
+        }
+
+
+    </script>
+</body>
+</html>
